@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:id="@+id/linearLayout"
+    android:background="@drawable/back">
+    <TextView android:id="@+id/hdate" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:background="#FFFFFF" android:gravity="center" 
+        android:textColor="#000000" />
+    
+	<TextView android:id="@+id/htitle" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:background="#AAAAAA" 
+	    android:gravity="center" 
+	    android:textColor="#FEFEFE" />
+        
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:id="@+id/LL1">
+
+        <Button
+            android:id="@+id/button1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:onClick="onClickY"
+            android:text="Yesterday" />        
+        <Button
+            android:id="@+id/button2"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:onClick="onClickT"
+            android:text="Today" />
+
+        <Button
+            android:id="@+id/button3"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:onClick="onClickW"
+            android:text="Tomorrow" />
+        
+        <Button
+            android:id="@+id/button4"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:onClick="onClickZ"
+            android:text="Zodiac" />
+
+    </LinearLayout>
+    
+ 	<ScrollView
+    	android:layout_width="fill_parent"
+    	android:layout_height="match_parent"
+    	android:layout_weight="0.50">   
+	<WebView
+    	android:id="@+id/webview"
+   		android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	/>
+	</ScrollView>		
+</LinearLayout>
